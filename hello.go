@@ -6,6 +6,7 @@ import (
 
 	"time"
 
+	"example.com/hello/calculator"
 	"github.com/fatih/color"
 	"github.com/leekchan/accounting"
 	"rsc.io/quote"
@@ -25,6 +26,21 @@ func rectangle(l int, b int) (parameters int, area int) {
 	parameters = (l + b) * 2
 	area = l * b
 	return // return statement without variable name
+}
+
+// declare an interface
+type Animal interface {
+	speak()
+}
+
+// declare a struct
+type Dog struct {
+	name string
+}
+
+// implement a method for Dog
+func (d Dog) Speak() {
+	fmt.Printf("%s, name=%s", "Dog", d.name)
 }
 
 func main() {
@@ -110,4 +126,9 @@ func main() {
 	fmt.Println("Slice A after appending data:", b)
 	fmt.Printf("Length is %d Capacity is %d\n", len(b), cap(b))
 
+	c := new(calculator.Calculator)
+	fmt.Println(c.Add(2, 3))
+
+	var d Dog = Dog{"Black dog"}
+	d.Speak()
 }

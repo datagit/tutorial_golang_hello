@@ -34,4 +34,18 @@ go get github.com/leekchan/accounting
 go build
 
 # func -> https://www.golangprograms.com/go-language/functions.html
+
+# struct
+type Calculator struct {
+	a int
+	b int
+}
+
+# import and export package -> https://www.golangprograms.com/golang-import-and-export-struct-packages-and-interfaces/golang-import-struct-from-another-or-child-package.html
+
+# interface -> https://www.youtube.com/watch?v=0Nh8EAlU6eM&list=PLVDJsRQrTUz5icsxSfKdymhghOtLNFn-k&index=6
+1. simple interface
+2. multiple interfaces
+3. embed interface
+4. empty interface
 ```
